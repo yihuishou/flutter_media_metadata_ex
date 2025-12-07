@@ -43,7 +43,7 @@
 
 ## 0.0.3
 
-- [media_metadata_retriever](https://github.com/alexmercerind/flutter_media_metadata) is now [flutter_media_metadata](https://github.com/alexmercerind/media_metadata_retriever).
+- [media_metadata_retriever](https://github.com/alexmercerind/flutter_media_metadata_ex) is now [flutter_media_metadata_ex](https://github.com/alexmercerind/media_metadata_retriever).
 - Added Linux support with album arts.
 - Uses [MediaInfoLib](https://github.com/MediaArea/MediaInfoLib) on Linux.
 

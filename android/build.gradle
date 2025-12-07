@@ -1,4 +1,4 @@
-group 'com.alexmercerind.flutter_media_metadata'
+group 'com.alexmercerind.flutter_media_metadata_ex'
 version '1.0'
 
 buildscript {

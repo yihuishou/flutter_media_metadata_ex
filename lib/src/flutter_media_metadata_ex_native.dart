@@ -1,4 +1,4 @@
-/// This file is a part of flutter_media_metadata (https://github.com/alexmercerind/flutter_media_metadata).
+/// This file is a part of flutter_media_metadata_ex (https://github.com/alexmercerind/flutter_media_metadata_ex).
 ///
 /// Copyright (c) 2021-2022, Hitesh Kumar Saini <saini123hitesh@gmail.com>.
 /// All rights reserved.
@@ -7,7 +7,7 @@
 import 'dart:io';
 import 'package:flutter/services.dart';
 
-import 'package:flutter_media_metadata/src/models/metadata.dart';
+import 'package:flutter_media_metadata_ex/src/models/metadata.dart';
 
 /// ## MetadataRetriever
 ///
@@ -53,4 +53,4 @@ class MetadataRetriever {
   }
 }
 
-var _kChannel = const MethodChannel('flutter_media_metadata');
+var _kChannel = const MethodChannel('flutter_media_metadata_ex');

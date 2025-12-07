@@ -1,9 +1,9 @@
-name: flutter_media_metadata
+name: flutter_media_metadata_ex
 description: A Flutter plugin to read metadata of media files.
 version: 1.0.0
-homepage: https://github.com/alexmercerind/flutter_media_metadata
-repository: https://github.com/alexmercerind/flutter_media_metadata
-documentation: https://github.com/alexmercerind/flutter_media_metadata/blob/master/README.md
+homepage: https://github.com/alexmercerind/flutter_media_metadata_ex
+repository: https://github.com/alexmercerind/flutter_media_metadata_ex
+documentation: https://github.com/alexmercerind/flutter_media_metadata_ex/blob/master/README.md
 
 environment:
   sdk: ">=2.17.5 <3.0.0"
@@ -26,16 +26,16 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.alexmercerind.flutter_media_metadata
-        pluginClass: FlutterMediaMetadataPlugin
+        package: com.alexmercerind.flutter_media_metadata_ex
+        pluginClass: FlutterMediaMetadataExPlugin
       windows:
-        pluginClass: FlutterMediaMetadataPlugin
+        pluginClass: FlutterMediaMetadataExPlugin
       linux:
-        pluginClass: FlutterMediaMetadataPlugin
+        pluginClass: FlutterMediaMetadataExPlugin
       ios:
-        pluginClass: FlutterMediaMetadataPlugin
+        pluginClass: FlutterMediaMetadataExPlugin
       macos:
-        pluginClass: FlutterMediaMetadataPlugin
+        pluginClass: FlutterMediaMetadataExPlugin
       web:
         pluginClass: MetadataRetriever
-        fileName: src/flutter_media_metadata_web.dart
+        fileName: src/flutter_media_metadata_ex_web.dart

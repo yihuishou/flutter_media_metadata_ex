@@ -1,4 +1,4 @@
-package com.alexmercerind.flutter_media_metadata;
+package com.alexmercerind.flutter_media_metadata_ex;
 import android.media.MediaMetadataRetriever;
 import java.util.HashMap;
 

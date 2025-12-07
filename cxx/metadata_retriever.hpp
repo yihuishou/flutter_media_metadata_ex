@@ -1,5 +1,5 @@
-/// This file is a part of flutter_media_metadata
-/// (https://github.com/alexmercerind/flutter_media_metadata).
+/// This file is a part of flutter_media_metadata_ex
+/// (https://github.com/alexmercerind/flutter_media_metadata_ex).
 ///
 /// Copyright (c) 2021-2022, Hitesh Kumar Saini <saini123hitesh@gmail.com>.
 /// All rights reserved.

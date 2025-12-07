@@ -1,4 +1,4 @@
-/// This file is a part of flutter_media_metadata (https://github.com/alexmercerind/flutter_media_metadata).
+/// This file is a part of flutter_media_metadata_ex (https://github.com/alexmercerind/flutter_media_metadata_ex).
 ///
 /// Copyright (c) 2021-2022, Hitesh Kumar Saini <saini123hitesh@gmail.com>.
 /// All rights reserved.
@@ -6,7 +6,7 @@
 
 import 'dart:typed_data';
 
-import 'package:flutter_media_metadata/src/utils.dart';
+import 'package:flutter_media_metadata_ex/src/utils.dart';
 
 /// Metadata of a media file.
 class Metadata {

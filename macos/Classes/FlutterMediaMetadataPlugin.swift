@@ -1,10 +1,10 @@
 import Cocoa
 import FlutterMacOS
 
-public class FlutterMediaMetadataPlugin: NSObject, FlutterPlugin {
+public class FlutterMediaMetadataExPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "flutter_media_metadata", binaryMessenger: registrar.messenger)
-    let instance = FlutterMediaMetadataPlugin()
+    let channel = FlutterMethodChannel(name: "flutter_media_metadata_ex", binaryMessenger: registrar.messenger)
+    let instance = FlutterMediaMetadataExPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 

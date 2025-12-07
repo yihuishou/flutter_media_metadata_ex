@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-set(PROJECT_NAME flutter_media_metadata)
+set(PROJECT_NAME flutter_media_metadata_ex)
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 set(CXX_STANDARD_REQUIRED 17)
@@ -12,7 +12,7 @@ include_directories(
 )
 
 add_library(${PLUGIN_NAME} SHARED
-  flutter_media_metadata_plugin.cpp
+  flutter_media_metadata_ex_plugin.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/../cxx/metadata_retriever.cpp
 )
 
@@ -38,7 +38,7 @@ target_compile_definitions(
   FLUTTER_PLUGIN_IMPL
 )
 
-set(flutter_media_metadata_bundled_libraries
+set(flutter_media_metadata_ex_bundled_libraries
   ${CMAKE_CURRENT_SOURCE_DIR}/../cxx/external/MediaInfo.dll
   PARENT_SCOPE
 )

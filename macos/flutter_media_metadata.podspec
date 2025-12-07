@@ -1,15 +1,15 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint flutter_media_metadata.podspec` to validate before publishing.
+# Run `pod lib lint flutter_media_metadata_ex.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_media_metadata'
+  s.name             = 'flutter_media_metadata_ex'
   s.version          = '0.0.1'
   s.summary          = 'A Flutter plugin to read metadata of media files.'
   s.description      = <<-DESC
 A Flutter plugin to read metadata of media files.
                        DESC
-  s.homepage         = 'https://github.com/alexmercerind/flutter_media_metadata'
+  s.homepage         = 'https://github.com/alexmercerind/flutter_media_metadata_ex'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Hitesh Kumar Saini' => 'saini123hitesh@gmail.com' }
   s.source           = { :path => '.' }

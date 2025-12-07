@@ -1,4 +1,4 @@
 #import <Flutter/Flutter.h>
 
-@interface FlutterMediaMetadataPlugin : NSObject<FlutterPlugin>
+@interface FlutterMediaMetadataExPlugin : NSObject<FlutterPlugin>
 @end

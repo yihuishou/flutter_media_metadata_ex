@@ -1,4 +1,4 @@
-package com.alexmercerind.flutter_media_metadata;
+package com.alexmercerind.flutter_media_metadata_ex;
 
 import java.util.HashMap;
 import java.lang.Runnable;
@@ -16,13 +16,13 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 
-public class FlutterMediaMetadataPlugin implements FlutterPlugin, MethodCallHandler {
+public class FlutterMediaMetadataExPlugin implements FlutterPlugin, MethodCallHandler {
   private MethodChannel channel;
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
     channel =
-        new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "flutter_media_metadata");
+        new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "flutter_media_metadata_ex");
     channel.setMethodCallHandler(this);
   }
 

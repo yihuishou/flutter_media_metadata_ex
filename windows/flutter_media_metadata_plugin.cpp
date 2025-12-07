@@ -1,12 +1,12 @@
-/// This file is a part of flutter_media_metadata
-/// (https://github.com/alexmercerind/flutter_media_metadata).
+/// This file is a part of flutter_media_metadata_ex
+/// (https://github.com/alexmercerind/flutter_media_metadata_ex).
 ///
 /// Copyright (c) 2021-2022, Hitesh Kumar Saini <saini123hitesh@gmail.com>.
 /// All rights reserved.
 /// Use of this source code is governed by MIT license that can be found in the
 /// LICENSE file.
 
-#include "include/flutter_media_metadata/flutter_media_metadata_plugin.h"
+#include "include/flutter_media_metadata_ex/flutter_media_metadata_ex_plugin.h"
 
 #include <flutter/method_channel.h>
 #include <flutter/plugin_registrar_windows.h>
@@ -18,13 +18,13 @@
 
 namespace {
 
-class FlutterMediaMetadataPlugin : public flutter::Plugin {
+class FlutterMediaMetadataExPlugin : public flutter::Plugin {
  public:
   static void RegisterWithRegistrar(flutter::PluginRegistrarWindows* registrar);
 
-  FlutterMediaMetadataPlugin();
+  FlutterMediaMetadataExPlugin();
 
-  virtual ~FlutterMediaMetadataPlugin();
+  virtual ~FlutterMediaMetadataExPlugin();
 
  private:
   void HandleMethodCall(
@@ -32,14 +32,14 @@ class FlutterMediaMetadataPlugin : public flutter::Plugin {
       std::unique_ptr<flutter::MethodResult<flutter::EncodableValue>> result);
 };
 
-void FlutterMediaMetadataPlugin::RegisterWithRegistrar(
+void FlutterMediaMetadataExPlugin::RegisterWithRegistrar(
     flutter::PluginRegistrarWindows* registrar) {
   auto channel =
       std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
-          registrar->messenger(), "flutter_media_metadata",
+          registrar->messenger(), "flutter_media_metadata_ex",
           &flutter::StandardMethodCodec::GetInstance());
 
-  auto plugin = std::make_unique<FlutterMediaMetadataPlugin>();
+  auto plugin = std::make_unique<FlutterMediaMetadataExPlugin>();
 
   channel->SetMethodCallHandler(
       [plugin_pointer = plugin.get()](const auto& call, auto result) {
@@ -49,11 +49,11 @@ void FlutterMediaMetadataPlugin::RegisterWithRegistrar(
   registrar->AddPlugin(std::move(plugin));
 }
 
-FlutterMediaMetadataPlugin::FlutterMediaMetadataPlugin() {}
+FlutterMediaMetadataExPlugin::FlutterMediaMetadataExPlugin() {}
 
-FlutterMediaMetadataPlugin::~FlutterMediaMetadataPlugin() {}
+FlutterMediaMetadataExPlugin::~FlutterMediaMetadataExPlugin() {}
 
-void FlutterMediaMetadataPlugin::HandleMethodCall(
+void FlutterMediaMetadataExPlugin::HandleMethodCall(
     const flutter::MethodCall<flutter::EncodableValue>& method_call,
     std::unique_ptr<flutter::MethodResult<flutter::EncodableValue>> result) {
   if (method_call.method_name().compare("MetadataRetriever") == 0) {
@@ -83,9 +83,9 @@ void FlutterMediaMetadataPlugin::HandleMethodCall(
 
 }  // namespace
 
-void FlutterMediaMetadataPluginRegisterWithRegistrar(
+void FlutterMediaMetadataExPluginRegisterWithRegistrar(
     FlutterDesktopPluginRegistrarRef registrar) {
-  FlutterMediaMetadataPlugin::RegisterWithRegistrar(
+  FlutterMediaMetadataExPlugin::RegisterWithRegistrar(
       flutter::PluginRegistrarManager::GetInstance()
           ->GetRegistrar<flutter::PluginRegistrarWindows>(registrar));
 }

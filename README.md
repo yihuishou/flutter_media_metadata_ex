@@ -1,4 +1,4 @@
-# [flutter_media_metadata](https://github.com/alexmercerind/flutter_media_metadata)
+# [flutter_media_metadata_ex](https://github.com/alexmercerind/flutter_media_metadata_ex)
 #### A Flutter plugin to read 🔖 metadata of 🎵 media files.
 
 ## Install
@@ -8,7 +8,7 @@ Add in your `pubspec.yaml`.
 ```yaml
 dependencies:
   ...
-  flutter_media_metadata: ^1.0.0
+  flutter_media_metadata_ex: ^1.0.0
 ```
 
 <img width="649" src="https://user-images.githubusercontent.com/28951144/151707391-a59bd40a-5303-4dd8-af35-ff8918894dbb.png">

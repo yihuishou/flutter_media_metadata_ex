@@ -1,4 +1,4 @@
-/// ## flutter_media_metadata
+/// ## flutter_media_metadata_ex
 ///
 /// A Flutter plugin to read metadata of media files.
 ///
@@ -25,8 +25,8 @@
 /// Uint8List? albumArt = metadata.albumArt;
 /// ```
 ///
-library flutter_media_metadata;
+library flutter_media_metadata_ex;
 
-export 'package:flutter_media_metadata/src/flutter_media_metadata_native.dart'
-    if (dart.library.html) 'package:flutter_media_metadata/src/flutter_media_metadata_web.dart';
-export 'package:flutter_media_metadata/src/models/metadata.dart';
+export 'package:flutter_media_metadata_ex/src/flutter_media_metadata_ex_native.dart'
+    if (dart.library.html) 'package:flutter_media_metadata_ex/src/flutter_media_metadata_ex_web.dart';
+export 'package:flutter_media_metadata_ex/src/models/metadata.dart';
